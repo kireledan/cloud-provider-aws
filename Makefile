@@ -16,7 +16,7 @@ SOURCES := $(shell find . -name '*.go')
 GOOS ?= $(shell go env GOOS)
 VERSION ?= $(shell git describe --exact-match 2> /dev/null || \
                  git describe --match=$(git rev-parse --short=8 HEAD) --always --dirty --abbrev=8)
-LDFLAGS   := "-w -s -X 'main.version=${VERSION}'"
+LDFLAGS   := "-X 'main.version=${VERSION}'"
 
 IMAGE ?= gcr.io/k8s-staging-provider-aws/cloud-controller-manager:$(VERSION)
 

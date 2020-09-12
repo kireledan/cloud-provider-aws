@@ -40,6 +40,7 @@ For the `aws-cloud-controller-manager` to be able to communicate to AWS APIs, yo
         "ec2:RevokeSecurityGroupIngress",
         "ec2:DescribeVpcs",
         "elasticloadbalancing:AddTags",
+        "elasticloadbalancing:AddListenerCertificates",
         "elasticloadbalancing:AttachLoadBalancerToSubnets",
         "elasticloadbalancing:ApplySecurityGroupsToLoadBalancer",
         "elasticloadbalancing:CreateLoadBalancer",
@@ -50,6 +51,7 @@ For the `aws-cloud-controller-manager` to be able to communicate to AWS APIs, yo
         "elasticloadbalancing:DeleteLoadBalancerListeners",
         "elasticloadbalancing:DescribeLoadBalancers",
         "elasticloadbalancing:DescribeLoadBalancerAttributes",
+        "elasticloadbalancing:DescribeListenerCertificates",
         "elasticloadbalancing:DetachLoadBalancerFromSubnets",
         "elasticloadbalancing:DeregisterInstancesFromLoadBalancer",
         "elasticloadbalancing:ModifyLoadBalancerAttributes",
@@ -69,6 +71,7 @@ For the `aws-cloud-controller-manager` to be able to communicate to AWS APIs, yo
         "elasticloadbalancing:RegisterTargets",
         "elasticloadbalancing:DeregisterTargets",
         "elasticloadbalancing:SetLoadBalancerPoliciesOfListener",
+        "elasticloadbalancing:RemoveListenerCertificates",
         "iam:CreateServiceLinkedRole",
         "kms:DescribeKey"
       ],

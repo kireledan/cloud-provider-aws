@@ -32,8 +32,7 @@ export NODE_ZONE=${AWS_NODE_ZONE:-"us-west-2a"}
 
 # Stop right away if the build fails
 set -e
-
-make -C "${CLOUD_PROVIDER_ROOT}"
+make -C "${CLOUD_PROVIDER_ROOT}" GOLDFLAGS=""
 
 write_cloudconfig() {
     rm -f $CLOUD_CONFIG

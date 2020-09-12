@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "Launch Cloud Controller",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/cmd/aws-cloud-controller-manager",
+            "args": [ "--v=3",
+                "--vmodule=",
+                "--feature-gates=AllAlpha=false",
+                "--cloud-provider=aws",
+                "--cloud-config=/home/ec2-user/go/src/k8s.io/cloud-provider-aws/cloudconfig",
+                "--kubeconfig=/var/run/kubernetes/controller.kubeconfig",
+                "--use-service-account-credentials",
+                "--leader-elect=false",
+                "--master=https://localhost:6443"]
+        },
+    ]
+}
